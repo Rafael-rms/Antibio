@@ -1,9 +1,10 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-import Login from '../screnns/login/Login';
+
 import Home from '../screnns/home/Home';
 import Search from '../screnns/search/Search';
+import Quiz from '../screnns/quiz/Quiz';
 
 const Tab = createBottomTabNavigator();
 
@@ -30,8 +31,8 @@ export default function TabRoutes() {
 
                     if (route.name === 'Home') {
                         iconNome = 'home'
-                    }else if (route.name === 'Login') {
-                        iconNome = 'login'
+                    }else if (route.name === 'Quiz') {
+                        iconNome = 'lightbulb-outline'
                     }else if (route.name === 'Search') {
                         iconNome = 'search'
                     }
@@ -42,10 +43,10 @@ export default function TabRoutes() {
         >
             
             <Tab.Screen
-                name='Login'
-                component={Login}
+                name='Quiz'
+                component={Quiz}
                 options={{
-                    tabBarLabel: 'Entrar', // Texto personalizado para a aba
+                    tabBarLabel: 'Quiz', // Texto personalizado para a aba
                   }}
             />
             <Tab.Screen
