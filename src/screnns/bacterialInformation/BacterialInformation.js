@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import Header from "../../components/Header";
 
-export default function BacterialInformation() {
+export default function BacterialInformation({navigation}) {
   return (
     <>
       <Header title='Ficha Bacteriana'/>
@@ -10,7 +10,7 @@ export default function BacterialInformation() {
 
         <TouchableOpacity
           style={styles.button}
-          // onPress={() => navigation.navigate("Geral")}
+          onPress={() => navigation.navigate("Features")}
         >
           <Text style={styles.buttonText}>  
             <Text style={styles.emoji}>🦠</Text>  Geral
@@ -62,6 +62,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     width: "90%",
     // alignItems: "center",
+    // justifyContent:'center',
     marginVertical: 10,
   },
   buttonText: {

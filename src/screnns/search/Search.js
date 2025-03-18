@@ -43,7 +43,7 @@ const microorganismos = [
   { id: "30", name: "Francisella tularensis" },
 ];
 
-export default function Search() {
+export default function Search({navigation}) {
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredData, setFilteredData] = useState(microorganismos);
 
@@ -78,7 +78,9 @@ export default function Search() {
             data={filteredData}
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => (
-              <TouchableOpacity style={styles.item}>
+              <TouchableOpacity style={styles.item}
+                onPress={() => navigation.navigate('BacterialInformation')}
+              >
                 <Text style={styles.itemText}>{item.name}</Text>
                 <MaterialIcons name="chevron-right" size={24} color="#888" />
               </TouchableOpacity>
