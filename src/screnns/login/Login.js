@@ -1,11 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, Text, TextInput, TouchableOpacity, View, Image } from 'react-native';
 
 export default function Login({navigation}) {
   return (
     <View style={styles.container}>
       <View style={styles.containerlogo}>
-
+        <Image 
+          style={styles.image}
+          source={require('../../assets/antibio.png')}
+        />
       </View>
       <View style={styles.containerLogin}>
         <TextInput
@@ -42,7 +45,14 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'white',
     width: '100%',
-    borderBottomRightRadius: 200
+    borderBottomRightRadius: 220,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingTop: 30
+  },
+  image: {
+    width: '70%',
+    height: '80%',
   },
   containerLogin: {
     flex: 1.5,
