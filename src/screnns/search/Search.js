@@ -61,7 +61,10 @@ export default function Search({navigation}) {
 
   return (
     <>
-      <Header title='Buscar'/>
+      <Header 
+        title='Buscar'
+        onPress={()=> navigation.goBack()}
+      />
       <View style={styles.container}>
         <View style={styles.searchContainer}>
           <MaterialIcons name="search" size={24} color="#888" />

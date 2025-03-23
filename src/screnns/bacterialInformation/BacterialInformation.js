@@ -5,7 +5,10 @@ import Header from "../../components/Header";
 export default function BacterialInformation({navigation}) {
   return (
     <>
-      <Header title='Ficha Bacteriana'/>
+      <Header 
+        title='Ficha Bacteriana'
+        onPress={()=> navigation.goBack()}
+      />
       <View style={styles.container}>
 
         <TouchableOpacity
@@ -19,6 +22,7 @@ export default function BacterialInformation({navigation}) {
 
         <TouchableOpacity
           style={styles.button}
+          onPress={() => navigation.navigate('Laboratory')}
           // onPress={() => navigation.navigate("Laboratorial")}
         >
           <Text style={styles.buttonText}>
@@ -60,7 +64,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#17b4a6",
     padding: 15,
     borderRadius: 10,
-    width: "90%",
+    width: "95%",
     // alignItems: "center",
     // justifyContent:'center',
     marginVertical: 10,
