@@ -7,6 +7,7 @@ export default function BacterialInformation({navigation}) {
     <>
       <Header 
         title='Ficha Bacteriana'
+        leftIcon="arrow-back"
         onPress={()=> navigation.goBack()}
       />
       <View style={styles.container}>

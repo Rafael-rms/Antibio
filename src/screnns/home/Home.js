@@ -3,10 +3,14 @@
 import { StyleSheet, Text, View } from 'react-native';
 import Header from '../../components/Header';
 
-export default function Home() {
+export default function Home({navigation}) {
   return (
     <>
-      <Header title='Início'/>
+      <Header 
+        title='Início'
+        rightIcon="settings"
+        onPress={()=> navigation.navigate("Login")}
+      />
       <View style={styles.container}>
         <Text>Home</Text>
       </View>

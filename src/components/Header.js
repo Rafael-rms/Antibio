@@ -1,40 +1,64 @@
+
 import { StatusBar } from 'expo-status-bar';
 import Icon from "react-native-vector-icons/MaterialIcons";
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Platform } from 'react-native';
 
-export default function Header({title, navigation, onPress}) {
+export default function Header({ 
+  title, 
+  leftIcon, 
+  onPress, 
+  rightIcon, 
+}) {
   return (
-    <View style={styles.container}>
-      <TouchableOpacity 
-        style={styles.button}
-        onPress={onPress}
-      >
-        <Icon name="arrow-back" size={30} color="white" />
-      </TouchableOpacity>
+    <View style={styles.container}>  
+      <StatusBar style="light" />
+      
+      {/* Botão Esquerdo (se existir) */}
+      {leftIcon && (
+        <TouchableOpacity style={styles.leftButton} onPress={onPress}>
+          <Icon name={leftIcon} size={30} color="white" />
+        </TouchableOpacity>
+      )}
+      
+      {/* Título */}
       <Text style={styles.text}>{title}</Text>
+      
+      {/* Botão Direito (se existir) */}
+      {rightIcon && (
+        <TouchableOpacity style={styles.rightButton} onPress={onPress}>
+          <Icon name={rightIcon} size={30} color="white" />
+        </TouchableOpacity>
+      )}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    height: 80,
     backgroundColor: '#17b4a6',
+    height: 80,
+    width: '100%',
+    paddingTop: Platform.OS === 'ios' ? 40 : 20,
+    flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    width: '100%',
+    position: 'relative'
   },
-  button: {
+  leftButton: {
     position: 'absolute',
-    left: 12,
-    bottom: 14
+    left: 16,
+    top: '58%',
+    // transform: [{ translateY: -15 }],
+  },
+  rightButton: {
+    position: 'absolute',
+    right: 16,
+    top: '58%',
+    // transform: [{ translateY: -15 }],
   },
   text: {
-    
-    fontSize: 30,
+    fontSize: 22,
     fontWeight: 'bold',
     color: 'white',
-    paddingTop: 15
   },
-
 });

@@ -7,6 +7,7 @@ export default function Features({navigation}) {
         <View style={styles.Container}>
             <Header 
                 title='Características'
+                leftIcon="arrow-back"
                 onPress={()=> navigation.goBack()}
             />
             <View style={styles.card}>
