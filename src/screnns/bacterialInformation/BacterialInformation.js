@@ -3,7 +3,15 @@ import React from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import Header from "../../components/Header";
 
+import { useRoute } from "@react-navigation/native";
+
 export default function BacterialInformation({ navigation }) {
+
+  const route = useRoute();
+  const { id } = route.params;
+  console.log(id)
+
+
   return (
     <>
       <Header
@@ -15,7 +23,7 @@ export default function BacterialInformation({ navigation }) {
 
         <TouchableOpacity
           style={styles.botton}
-          onPress={() => navigation.navigate("Features")}
+          onPress={() => navigation.navigate("Features" , { id })}
         >
           <Text style={styles.bottonText}>
             🦠 <Text style={styles.textLabel}>Geral</Text>
@@ -24,7 +32,7 @@ export default function BacterialInformation({ navigation }) {
 
         <TouchableOpacity
           style={styles.botton}
-          onPress={() => navigation.navigate("Laboratory")}
+          onPress={() => navigation.navigate("Laboratory" , { id })}
         >
           <Text style={styles.bottonText}>
             🔬 <Text style={styles.textLabel}>Laboratorial</Text>
@@ -33,7 +41,7 @@ export default function BacterialInformation({ navigation }) {
 
         <TouchableOpacity
           style={styles.botton}
-          onPress={() => navigation.navigate("Resistance")}
+          onPress={() => navigation.navigate("Resistance" , { id })}
         >
           <Text style={styles.bottonText}>
             💊 <Text style={styles.textLabel}>Resistência & Tratamento</Text>
@@ -42,7 +50,7 @@ export default function BacterialInformation({ navigation }) {
 
         <TouchableOpacity
           style={styles.botton}
-          // onPress={() => navigation.navigate("EpidemiologiaClinica")}
+          // onPress={() => navigation.navigate("EpidemiologiaClinica" , { id })}
         >
           <Text style={styles.bottonText}>
             📊 <Text style={styles.textLabel}>Epidemiologia & Clínica</Text>

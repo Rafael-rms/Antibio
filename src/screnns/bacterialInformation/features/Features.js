@@ -4,7 +4,19 @@ import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import Header from "../../../components/Header";
 
+import { useRoute } from "@react-navigation/native";
+
+import { bacterias } from "../../../data/bacterias";
+
 export default function Features({ navigation }) {
+
+  const route = useRoute();
+  const { id } = route.params;
+  console.log(id)
+
+  const bacteria = bacterias.find((item) => item.id === id);
+
+
   return (
     <View style={styles.container}>
       <Header
@@ -14,30 +26,27 @@ export default function Features({ navigation }) {
       />
 
       <View style={styles.card}>
-        <Text style={styles.title}>Escherichia coli</Text>
+        <Text style={styles.title}>{bacteria.nome}</Text>
 
         <View style={styles.item}>
           <Text style={styles.label}>👨‍👩‍👧‍👦 Família:</Text>
-          <Text style={styles.value}>Enterobacteriaceae</Text>
+          <Text style={styles.value}>{bacteria.familia}</Text>
         </View>
         <View style={styles.item}>
           <Text style={styles.label}>🔬 Morfologia:</Text>
-          <Text style={styles.value}>Bacilo</Text>
+          <Text style={styles.value}>{bacteria.morfologia}</Text>
         </View>
 
         <View style={styles.item}>
           <Text style={styles.label}>📌 Gram:</Text>
-          <Text style={styles.value}>Negativo</Text>
+          <Text style={styles.value}> ====== Retirar</Text>
         </View>
 
 
 
         <View style={styles.item}>
           <Text style={styles.label}>🧾 Descrição:</Text>
-          <Text style={styles.value}>
-            Bactéria comum da microbiota intestinal. Pode causar infecções
-            urinárias, gastroenterites, meningite neonatal e sepse.
-          </Text>
+          <Text style={styles.value}>{bacteria.descricao}</Text>
         </View>
       </View>
     </View>

@@ -1,3 +1,5 @@
+
+
 import Header from "../../components/Header";
 import React, { useState } from "react";
 import {
@@ -10,69 +12,39 @@ import {
 } from "react-native";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 
-const microorganismos = [
-  { id: "1", name: "Escherichia coli" },
-  { id: "2", name: "Staphylococcus aureus" },
-  { id: "3", name: "Pseudomonas aeruginosa" },
-  { id: "4", name: "Klebsiella pneumoniae" },
-  { id: "5", name: "Streptococcus pneumoniae" },
-  { id: "6", name: "Salmonella spp." },
-  { id: "7", name: "Mycobacterium tuberculosis" },
-  { id: "8", name: "Listeria monocytogenes" },
-  { id: "9", name: "Clostridium difficile" },
-  { id: "10", name: "Helicobacter pylori" },
-  { id: "11", name: "Campylobacter jejuni" },
-  { id: "12", name: "Bacillus cereus" },
-  { id: "13", name: "Vibrio cholerae" },
-  { id: "14", name: "Neisseria meningitidis" },
-  { id: "15", name: "Haemophilus influenzae" },
-  { id: "16", name: "Legionella pneumophila" },
-  { id: "17", name: "Yersinia enterocolitica" },
-  { id: "18", name: "Shigella dysenteriae" },
-  { id: "19", name: "Proteus mirabilis" },
-  { id: "20", name: "Serratia marcescens" },
-  { id: "21", name: "Acinetobacter baumannii" },
-  { id: "22", name: "Corynebacterium diphtheriae" },
-  { id: "23", name: "Bordetella pertussis" },
-  { id: "24", name: "Treponema pallidum" },
-  { id: "25", name: "Borrelia burgdorferi" },
-  { id: "26", name: "Leptospira interrogans" },
-  { id: "27", name: "Chlamydia trachomatis" },
-  { id: "28", name: "Rickettsia rickettsii" },
-  { id: "29", name: "Brucella spp." },
-  { id: "30", name: "Francisella tularensis" },
-];
+import { bacterias } from "../../data/bacterias.json";
 
-export default function Search({navigation}) {
+
+export default function Search({ navigation }) {
   const [searchQuery, setSearchQuery] = useState("");
-  const [filteredData, setFilteredData] = useState(microorganismos);
+  const [filteredData, setFilteredData] = useState(bacterias);
+
 
   const handleSearch = (text) => {
     setSearchQuery(text);
     if (text === "") {
-      setFilteredData(microorganismos);
+      setFilteredData(bacterias);
     } else {
-      const filtered = microorganismos.filter((item) =>
-        item.name.toLowerCase().includes(text.toLowerCase())
+      const filtered = bacterias.filter((item) =>
+        item.nome.toLowerCase().includes(text.toLowerCase())
       );
       setFilteredData(filtered);
     }
   };
 
+
   return (
     <>
-      <Header 
-        title='Buscar'
-        onPress={()=> navigation.goBack()}
-      />
+      <Header title="Buscar" onPress={() => navigation.goBack()} />
       <View style={styles.container}>
         <View style={styles.searchContainer}>
-          <MaterialIcons name="search" size={24} color="#888" />
+          <MaterialIcons name="search" size={24} color="#17b4a6" />
           <TextInput
             style={styles.searchInput}
             placeholder="Buscar microrganismo..."
             value={searchQuery}
             onChangeText={handleSearch}
+            placeholderTextColor="#aaa"
           />
         </View>
 
@@ -81,11 +53,12 @@ export default function Search({navigation}) {
             data={filteredData}
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => (
-              <TouchableOpacity style={styles.item}
-                onPress={() => navigation.navigate('BacterialInformation')}
+              <TouchableOpacity
+                style={styles.item}
+                onPress={() => navigation.navigate("BacterialInformation", { id: item.id })}
               >
-                <Text style={styles.itemText}>{item.name}</Text>
-                <MaterialIcons name="chevron-right" size={24} color="#888" />
+                <Text style={styles.itemText}>{item.nome}</Text>
+                <MaterialIcons name="chevron-right" size={24} color="#17b4a6" />
               </TouchableOpacity>
             )}
           />
@@ -101,46 +74,51 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
-    backgroundColor: "#f8f9fa",
+    backgroundColor: "#e6f7f6",
   },
   searchContainer: {
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: "#fff",
-    borderRadius: 10,
-    paddingHorizontal: 10,
-    elevation: 3,
-    shadowColor: "#000",
-    shadowOpacity: 0.1,
-    shadowRadius: 3,
+    backgroundColor: "#ffffff",
+    borderRadius: 15,
+    paddingHorizontal: 12,
     height: 50,
-    marginBottom: 15,
+    marginBottom: 20,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
   },
   searchInput: {
     flex: 1,
     fontSize: 16,
     paddingHorizontal: 10,
+    color: "#333",
   },
   item: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
     padding: 15,
-    borderBottomWidth: 1,
-    borderBottomColor: "#ddd",
-    backgroundColor: "#fff",
-    borderRadius: 10,
-    marginBottom: 10,
+    backgroundColor: "#ffffff",
+    borderRadius: 15,
+    marginBottom: 12,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
     elevation: 2,
   },
   itemText: {
     fontSize: 18,
     fontWeight: "500",
+    color: "#333",
   },
   noResults: {
     textAlign: "center",
     fontSize: 16,
     color: "#888",
-    marginTop: 20,
+    marginTop: 30,
   },
 });

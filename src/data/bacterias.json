@@ -1,0 +1,219 @@
+
+  
+
+
+{
+  "bacterias": [
+    {
+      "id": "escherichia_coli",
+      "nome": "Escherichia coli",
+      "familia": "Enterobacteriaceae",
+      "descricao": "Bactéria Gram-negativa da família Enterobacterales.",
+      "meiosCultura": ["Ágar MacConkey", "Ágar Sangue"],
+      "testesBioquimicos": ["Oxidase negativa", "Fermenta lactose", "Indol positiva"],
+      "morfologia": ["Bacilo Gram-negativo"],
+      "antibioticos": [
+        "amicacina", "amoxiclav", "ampicilina", "aztreonam", "ceftriaxona",
+        "ciprofloxacino", "levofloxacina","cefepime", "ceftazidima", "cefuroxima_parenteral", 
+        "caftazidima-avibactam", "ampsulbactam", "Cefotaxima", "cefuroxima_oral", "cefuroxima_parenteral",
+        "gentamicina", "ertapenem", "imipeném", "meropeném", "nitrofurantoina", "Norfloxacino (urina)",
+        "Piperacilina + Tazobactam", "Tobramicina", "merovaborbactam", "piptazo", "tmp_smx"
+      ]
+    },
+    {
+      "id": "klebsiella_pneumoniae",
+      "nome": "Klebsiella pneumoniae",
+      "familia": "Enterobacteriaceae",
+      "descricao": "Bactéria encapsulada, Gram-negativa, da família Enterobacterales.",
+      "meiosCultura": ["Ágar MacConkey", "Ágar Sangue"],
+      "testesBioquimicos": ["Fermenta lactose", "Indol negativa", "Ornitina negativa"],
+      "morfologia": ["Bacilo Gram-negativo", "Cápsula visível em coloração de Gram"],
+      "antibioticos": [
+        "amicacina", "amoxiclav", "ampicilina", "aztreonam", "ceftriaxona",
+          "ciprofloxacino", "cefepime", "ceftazidima", "cefuroxima_parenteral", "fosfomicina"
+      ]
+    },
+    {
+      "id": "klebsiella_oxytoca",
+      "nome": "Klebsiella oxytoca",
+      "familia": "Enterobacteriaceae",
+      "descricao": "Bactéria Gram-negativa da família Enterobacterales, semelhante à K. pneumoniae.",
+      "meiosCultura": ["Ágar MacConkey", "Ágar Sangue"],
+      "testesBioquimicos": ["Fermenta lactose", "Indol positiva", "Ornitina negativa"],
+      "morfologia": ["Bacilo Gram-negativo"],
+      "antibioticos": [
+        "amicacina", "amoxiclav", "ampicilina", "aztreonam", "ceftriaxona",
+          "ciprofloxacino", "cefepime", "ceftazidima", "cefuroxima_parenteral", "fosfomicina"
+      ]
+    },
+    {
+      "id": "klebsiella_aerogenes",
+      "nome": "Klebsiella aerogenes",
+      "familia": "Enterobacteriaceae",
+      "descricao": "Anteriormente conhecida como Enterobacter aerogenes, é uma bactéria Gram-negativa oportunista.",
+      "meiosCultura": ["Ágar MacConkey", "Ágar Sangue"],
+      "testesBioquimicos": ["Fermenta lactose tardiamente", "Indol negativa", "Motilidade positiva"],
+      "morfologia": ["Bacilo Gram-negativo"],
+      "antibioticos": [
+        "amicacina", "amoxiclav", "ampicilina", "aztreonam", "ceftriaxona",
+          "ciprofloxacino", "cefepime", "ceftazidima", "cefuroxima_parenteral", "fosfomicina"
+      ]
+    },
+    {
+      "id": "enterobacter_cloacae",
+      "nome": "Enterobacter cloacae complex",
+      "familia": "Enterobacteriaceae",
+      "descricao": "Bactéria Gram-negativa oportunista da família Enterobacterales.",
+      "meiosCultura": ["Ágar MacConkey", "Ágar Sangue"],
+      "testesBioquimicos": ["Fermenta lactose tardiamente", "Indol negativa", "Motilidade positiva"],
+      "morfologia": ["Bacilo Gram-negativo"],
+      "antibioticos": [
+        "amicacina", "amoxiclav", "ampicilina", "aztreonam", "ceftriaxona",
+          "ciprofloxacino", "cefepime", "ceftazidima", "cefuroxima_parenteral", "fosfomicina"
+      ]
+    },
+    {
+      "id": "enterobacter_asburiae",
+      "nome": "Enterobacter asburiae",
+      "familia": "Enterobacteriaceae",
+      "descricao": "Espécie do complexo Enterobacter cloacae, Gram-negativa e oportunista.",
+      "meiosCultura": ["Ágar MacConkey", "Ágar Sangue"],
+      "testesBioquimicos": ["Fermenta lactose tardiamente", "Indol negativa", "Motilidade positiva"],
+      "morfologia": ["Bacilo Gram-negativo"],
+      "antibioticos": [
+        "amicacina", "amoxiclav", "ampicilina", "aztreonam", "ceftriaxona",
+          "ciprofloxacino", "cefepime", "ceftazidima", "cefuroxima_parenteral", "fosfomicina"
+      ]
+    },
+    {
+      "id": "enterobacter_hormaechei",
+      "nome": "Enterobacter hormaechei",
+      "familia": "Enterobacteriaceae",
+      "descricao": "Espécie do complexo Enterobacter cloacae, com resistência intrínseca a diversos antibióticos.",
+      "meiosCultura": ["Ágar MacConkey", "Ágar Sangue"],
+      "testesBioquimicos": ["Fermenta lactose tardiamente", "Indol negativa", "Motilidade positiva"],
+      "morfologia": ["Bacilo Gram-negativo"],
+      "antibioticos": [
+        "amicacina", "amoxiclav", "ampicilina", "aztreonam", "ceftriaxona",
+          "ciprofloxacino", "cefepime", "ceftazidima", "cefuroxima_parenteral", "fosfomicina"
+      ]
+    },
+    {
+      "id": "citrobacter_freundii",
+      "nome": "Citrobacter freundii",
+      "familia": "Enterobacteriaceae",
+      "descricao": "Bactéria oportunista Gram-negativa do grupo das Enterobacterales.",
+      "meiosCultura": ["Ágar MacConkey", "Ágar Sangue"],
+      "testesBioquimicos": ["Fermenta lactose tardiamente", "H2S positiva", "Indol variável"],
+      "morfologia": ["Bacilo Gram-negativo"],
+      "antibioticos": [
+        "amicacina", "amoxiclav", "ampicilina", "aztreonam", "ceftriaxona",
+          "ciprofloxacino", "cefepime", "ceftazidima", "cefuroxima_parenteral", "fosfomicina"
+      ]
+    },
+    {
+      "id": "citrobacter_koseri",
+      "nome": "Citrobacter koseri",
+      "familia": "Enterobacteriaceae",
+      "descricao": "Bactéria Gram-negativa que pode causar infecções do trato urinário e meningites neonatais.",
+      "meiosCultura": ["Ágar MacConkey", "Ágar Sangue"],
+      "testesBioquimicos": ["Fermenta lactose tardiamente", "Indol positiva", "H2S negativa"],
+      "morfologia": ["Bacilo Gram-negativo"],
+      "antibioticos": [
+        "amicacina", "amoxiclav", "ampicilina", "aztreonam", "ceftriaxona",
+          "ciprofloxacino", "cefepime", "ceftazidima", "cefuroxima_parenteral", "fosfomicina"
+      ]
+    },
+    {
+      "id": "citrobacter_braakii",
+      "nome": "Citrobacter braakii",
+      "familia": "Enterobacteriaceae",
+      "descricao": "Espécie oportunista associada a infecções hospitalares.",
+      "meiosCultura": ["Ágar MacConkey", "Ágar Sangue"],
+      "testesBioquimicos": ["Fermenta lactose tardiamente", "H2S positiva", "Indol variável"],
+      "morfologia": ["Bacilo Gram-negativo"],
+      "antibioticos": [
+        "amicacina", "amoxiclav", "ampicilina", "aztreonam", "ceftriaxona",
+          "ciprofloxacino", "cefepime", "ceftazidima", "cefuroxima_parenteral", "fosfomicina"
+      ]
+    },
+    {
+      "id": "serratia_marcescens",
+      "nome": "Serratia marcescens",
+      "familia": "Enterobacteriaceae",
+      "descricao": "Bactéria Gram-negativa, produtora de pigmento vermelho em temperatura ambiente.",
+      "meiosCultura": ["Ágar MacConkey", "Ágar Nutriente"],
+      "testesBioquimicos": ["DNase positiva", "Gelatinase positiva", "Ornitina positiva"],
+      "morfologia": ["Bacilo Gram-negativo"],
+      "antibioticos": [
+        "amicacina", "amoxiclav", "ampicilina", "aztreonam", "ceftriaxona",
+          "ciprofloxacino", "cefepime", "ceftazidima", "cefuroxima_parenteral", "fosfomicina"
+      ]
+    },
+    {
+      "id": "proteus_mirabilis",
+      "nome": "Proteus mirabilis",
+      "familia": "Enterobacteriaceae",
+      "descricao": "Bactéria Gram-negativa com motilidade em ondas (swarming).",
+      "meiosCultura": ["Ágar MacConkey", "Ágar Sangue", "Ágar Nutriente"],
+      "testesBioquimicos": ["Urease positiva", "H2S positiva", "Indol negativa"],
+      "morfologia": ["Bacilo Gram-negativo"],
+      "antibioticos": [
+        "amicacina", "amoxiclav", "ampicilina", "aztreonam", "ceftriaxona",
+          "ciprofloxacino", "cefepime", "ceftazidima", "cefuroxima_parenteral", "fosfomicina"
+      ]
+    },
+    {
+      "id": "proteus_vulgaris",
+      "nome": "Proteus vulgaris",
+      "familia": "Enterobacteriaceae",
+      "descricao": "Bactéria Gram-negativa, motilidade intensa, urease positiva.",
+      "meiosCultura": ["Ágar MacConkey", "Ágar Sangue"],
+      "testesBioquimicos": ["Urease positiva", "Indol positiva", "H2S positiva"],
+      "morfologia": ["Bacilo Gram-negativo"],
+      "antibioticos": [
+        "amicacina", "amoxiclav", "ampicilina", "aztreonam", "ceftriaxona",
+          "ciprofloxacino", "cefepime", "ceftazidima", "cefuroxima_parenteral", "fosfomicina"
+      ]
+    },
+    {
+      "id": "morganella_morganii",
+      "nome": "Morganella morganii",
+      "familia": "Enterobacteriaceae",
+      "descricao": "Bactéria Gram-negativa oportunista com resistência intrínseca a colistina.",
+      "meiosCultura": ["Ágar MacConkey", "Ágar Sangue"],
+      "testesBioquimicos": ["Indol positiva", "Urease positiva", "H2S negativa"],
+      "morfologia": ["Bacilo Gram-negativo"],
+      "antibioticos": [
+        "amicacina", "amoxiclav", "ampicilina", "aztreonam", "ceftriaxona",
+          "ciprofloxacino", "cefepime", "ceftazidima", "cefuroxima_parenteral", "fosfomicina"
+      ]
+    },
+    {
+      "id": "providencia_stuartii",
+      "nome": "Providencia stuartii",
+      "familia": "Enterobacteriaceae",
+      "descricao": "Bactéria Gram-negativa, comum em infecções urinárias hospitalares.",
+      "meiosCultura": ["Ágar MacConkey", "Ágar Sangue"],
+      "testesBioquimicos": ["Urease positiva", "Indol positiva", "Citrato positiva"],
+      "morfologia": ["Bacilo Gram-negativo"],
+      "antibioticos": [
+        "amicacina", "amoxiclav", "ampicilina", "aztreonam", "ceftriaxona",
+          "ciprofloxacino", "cefepime", "ceftazidima", "cefuroxima_parenteral", "fosfomicina"
+      ]
+    },
+    {
+      "id": "providencia_rettgeri",
+      "nome": "Providencia rettgeri",
+      "familia": "Enterobacteriaceae",
+      "descricao": "Bactéria Gram-negativa oportunista, resistente a múltiplas drogas.",
+      "meiosCultura": ["Ágar MacConkey", "Ágar Sangue"],
+      "testesBioquimicos": ["Indol positiva", "Urease positiva", "Citrato positiva"],
+      "morfologia": ["Bacilo Gram-negativo"],
+      "antibioticos": [
+        "amicacina", "amoxiclav", "ampicilina", "aztreonam", "ceftriaxona",
+          "ciprofloxacino", "cefepime", "ceftazidima", "cefuroxima_parenteral", "fosfomicina"
+      ]
+    }
+  ]
+}

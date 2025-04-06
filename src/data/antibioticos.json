@@ -1,0 +1,155 @@
+{
+    "antibioticos": [
+      {
+        "id": "amicacina",
+        "nome": "Amicacina",
+        "mic": { "S": "<=8", "I": "-", "R": ">16" }
+      },
+      {
+        "id": "amoxiclav",
+        "nome": "Amoxicilina + Ác. Clavulânico",
+        "mic": { "S": "<=8", "I": "-", "R": ">8" }
+      },
+      {
+        "id": "ampicilina",
+        "nome": "Ampicilina",
+        "mic": { "S": "<=8", "I": "-", "R": ">8" }
+      },
+      {
+        "id": "ampsulbactam",
+        "nome": "Ampicilina + Sulbactam",
+        "mic": { "S": "<=8", "I": "-", "R": ">8" }
+      },
+      {
+        "id": "aztreonam",
+        "nome": "Aztreonam",
+        "mic": { "S": "<=1", "I": "=2", "R": ">4" }
+      },
+      {
+        "id": "cefalexina",
+        "nome": "Cefalexina (oral)",
+        "mic": { "S": "<=16", "I": "-", "R": ">16" }
+      },
+      {
+        "id": "cefepime",
+        "nome": "Cefepime",
+        "mic": { "S": "<=1", "I": "=2", "R": ">4" }
+      },
+      {
+        "id": "cefotaxima",
+        "nome": "Cefotaxima",
+        "mic": { "S": "<=1", "I": "=2", "R": ">4" }
+      },
+      {
+        "id": "cefoxitina",
+        "nome": "Cefoxitina",
+        "mic": { "S": "<=8", "I": "-", "R": ">8" }
+      },
+      {
+        "id": "ceftazidima",
+        "nome": "Ceftazidima",
+        "mic": { "S": "<=1", "I": "=2", "R": ">4" }
+      },
+      {
+        "id": "ceftazavibactam",
+        "nome": "Ceftazidima + Avibactam",
+        "mic": { "S": "<=8", "I": "-", "R": ">8" }
+      },
+      {
+        "id": "ceftriaxona",
+        "nome": "Ceftriaxona",
+        "mic": { "S": "<=1", "I": "=2", "R": ">4" }
+      },
+      {
+        "id": "cefuroxima_oral",
+        "nome": "Cefuroxima (oral)",
+        "mic": { "S": "<=8", "I": "-", "R": ">8" }
+      },
+      {
+        "id": "cefuroxima_parenteral",
+        "nome": "Cefuroxima (parenteral)",
+        "mic": { "S": "<=1", "I": "=2", "R": ">4" }
+      },
+      {
+        "id": "ciprofloxacino",
+        "nome": "Ciprofloxacino",
+        "mic": { "S": "<=0.25", "I": "=0.5", "R": ">1" }
+      },
+      {
+        "id": "doripenem",
+        "nome": "Doripenem",
+        "mic": { "S": "<=1", "I": "=2", "R": ">4" }
+      },
+      {
+        "id": "ertapenem",
+        "nome": "Ertapenem",
+        "mic": { "S": "<=0.5", "I": "=1", "R": ">2" }
+      },
+      {
+        "id": "fosfomicina",
+        "nome": "Fosfomicina (urina)",
+        "mic": { "S": "<=32", "I": "-", "R": ">32" }
+      },
+      {
+        "id": "gentamicina",
+        "nome": "Gentamicina",
+        "mic": { "S": "<=2", "I": "-", "R": ">4" }
+      },
+      {
+        "id": "imipenem",
+        "nome": "Imipeném",
+        "mic": { "S": "<=2", "I": "=4", "R": ">8" }
+      },
+      {
+        "id": "levofloxacino",
+        "nome": "Levofloxacino",
+        "mic": { "S": "<=0.5", "I": "=1", "R": ">2" }
+      },
+      {
+        "id": "meropenem",
+        "nome": "Meropeném",
+        "mic": { "S": "<=2", "I": "=4", "R": ">8" }
+      },
+      {
+        "id": "merovaborbactam",
+        "nome": "Meropeném + Vaborbactam",
+        "mic": { "S": "<=8", "I": "-", "R": ">8" }
+      },
+      {
+        "id": "nitrofurantoina",
+        "nome": "Nitrofurantoína (urina)",
+        "mic": { "S": "<=64", "I": "-", "R": ">64" }
+      },
+      {
+        "id": "norfloxacino",
+        "nome": "Norfloxacino (urina)",
+        "mic": { "S": "<=0.5", "I": "=1", "R": ">2" }
+      },
+      {
+        "id": "piptazo",
+        "nome": "Piperacilina + Tazobactam",
+        "mic": { "S": "<=8", "I": "-", "R": ">16" }
+      },
+      {
+        "id": "temocilina",
+        "nome": "Temocilina (urina)",
+        "mic": { "S": "<=32", "I": "-", "R": ">32" }
+      },
+      {
+        "id": "tigeciclina",
+        "nome": "Tigeciclina",
+        "mic": { "S": "<=1", "I": "-", "R": ">2" }
+      },
+      {
+        "id": "tobramicina",
+        "nome": "Tobramicina",
+        "mic": { "S": "<=2", "I": "-", "R": ">4" }
+      },
+      {
+        "id": "tmp_smx",
+        "nome": "Trimetoprim + Sulfametoxazol",
+        "mic": { "S": "<=2/38", "I": "-", "R": ">4/76" }
+      }
+    ]
+  }
+  
