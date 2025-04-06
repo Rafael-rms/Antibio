@@ -4,6 +4,7 @@ import TabRoutes from "./tab.routes";
 import BacterialInformation from "../screnns/bacterialInformation/BacterialInformation";
 import Features from "../screnns/bacterialInformation/features/Features";
 import Laboratory from "../screnns/bacterialInformation/laboratory/Laboratory";
+import Resistance from "../screnns/bacterialInformation/resistance/Resistance";
 
 const Stack = createNativeStackNavigator();
 
@@ -36,6 +37,10 @@ export default function StackRoutes() {
             <Stack.Screen 
                 name="Laboratory"
                 component={Laboratory}
+            />
+            <Stack.Screen 
+                name="Resistance"
+                component={Resistance}
             />
         </Stack.Navigator>
     )

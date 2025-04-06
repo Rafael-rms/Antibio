@@ -7,7 +7,7 @@ export default function Quiz() {
     <>
       <Header title='Quiz'/>
       <View style={styles.container}>
-        <Text>Login</Text>
+        <Text>Em Desenvolvimento</Text>
         <StatusBar style="auto" />
       </View>
     </>
