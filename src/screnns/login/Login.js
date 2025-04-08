@@ -1,29 +1,45 @@
+
+
 import { StatusBar } from 'expo-status-bar';
+import React from 'react';
 import { StyleSheet, Text, TextInput, TouchableOpacity, View, Image } from 'react-native';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 export default function Login({ navigation }) {
   return (
     <View style={styles.container}>
-      <View style={styles.containerlogo}>
+      <StatusBar style="light" backgroundColor="#17b4a6" />
+
+      <View style={styles.containerLogo}>
         <Image
           style={styles.image}
           source={require('../../assets/antibio.png')}
         />
       </View>
-      <View style={styles.containerLogin}>
-        <TextInput
-          style={styles.input}
-          placeholder='Digite seu email'
-        />
 
-        <TouchableOpacity style={styles.buttonRecSENHA}>
+      <View style={styles.containerLogin}>
+        <View style={styles.inputWrapper}>
+          <MaterialCommunityIcons name="email-outline" size={24} color="#aaa" style={styles.icon} />
+          <TextInput
+            style={styles.input}
+            placeholder="Digite seu email"
+            placeholderTextColor="#888"
+          />
+        </View>
+
+        <TouchableOpacity style={styles.buttonRecSenha}>
           <Text style={styles.textRecSenha}>Esqueceu sua senha?</Text>
         </TouchableOpacity>
 
-        <TextInput
-          style={styles.input}
-          placeholder='Digite sua senha'
-        />
+        <View style={styles.inputWrapper}>
+          <MaterialCommunityIcons name="lock-outline" size={24} color="#aaa" style={styles.icon} />
+          <TextInput
+            style={styles.input}
+            placeholder="Digite sua senha"
+            placeholderTextColor="#888"
+            secureTextEntry
+          />
+        </View>
 
         <TouchableOpacity
           style={styles.button}
@@ -36,15 +52,11 @@ export default function Login({ navigation }) {
           <Text style={styles.textButtonCadastrar}>
             Ainda não tem uma conta?
           </Text>
-          <TouchableOpacity
-            style={styles.buttonCadastrar}
-          >
+          <TouchableOpacity style={styles.buttonCadastrar}>
             <Text style={styles.textCadastrar}> Cadastre-se</Text>
           </TouchableOpacity>
         </View>
-
       </View>
-
     </View>
   );
 }
@@ -56,14 +68,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  containerlogo: {
+  containerLogo: {
     flex: 1,
     backgroundColor: 'white',
     width: '100%',
-    borderBottomRightRadius: 220,
+    borderBottomRightRadius: 120,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingTop: 40
+    paddingTop: 30,
   },
   image: {
     width: '70%',
@@ -73,29 +85,35 @@ const styles = StyleSheet.create({
     flex: 1.5,
     width: '100%',
     alignItems: 'center',
-    paddingTop: 55
+    paddingTop: 40,
   },
-  input: {
+  inputWrapper: {
+    flexDirection: 'row',
+    alignItems: 'center',
     backgroundColor: 'white',
     width: '90%',
     height: 55,
     borderRadius: 15,
-    marginBottom: 25,
-    fontSize: 20,
-    paddingLeft: 15
+    marginBottom: 10,
+    paddingLeft: 10,
   },
-  buttonRecSENHA: {
-    // backgroundColor: 'green',
+  icon: {
+    marginRight: 5,
+  },
+  input: {
+    flex: 1,
+    fontSize: 18,
+    color: '#333',
+  },
+  buttonRecSenha: {
     width: '90%',
     alignItems: 'flex-end',
-    padding: 8,
-    position: 'absolute',
-    top: 102
+    marginBottom: 10,
   },
   textRecSenha: {
     color: '#f0f0f0',
     fontSize: 15,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
   button: {
     backgroundColor: '#F57C00',
@@ -103,6 +121,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 12,
     borderRadius: 20,
+    marginTop: 10,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.3,
@@ -112,28 +131,27 @@ const styles = StyleSheet.create({
   text: {
     color: 'white',
     fontSize: 20,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
   containerCadastrar: {
     flexDirection: 'row',
-    padding: 20,
-    alignItems: 'center'
-  },
-  buttonCadastrar: {
-    // backgroundColor: 'green',
-    // alignItems: 'center',
-    // justifyContent: 'center'
-
+    padding: 15,
+    alignItems: 'center',
+    backgroundColor: 'rgba(255,255,255,0.1)',
+    borderRadius: 10,
+    marginTop: 20,
   },
   textButtonCadastrar: {
     color: 'white',
-    fontSize: 15
+    fontSize: 15,
   },
   textCadastrar: {
     fontSize: 17,
     color: 'white',
-    fontWeight: 'bold'
-  }
+    fontWeight: 'bold',
+  },
+  buttonCadastrar: {},
 });
+
 
 

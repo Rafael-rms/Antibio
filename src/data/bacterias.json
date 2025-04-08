@@ -17,7 +17,7 @@
         "ciprofloxacino", "levofloxacina","cefepime", "ceftazidima", "cefuroxima_parenteral", 
         "caftazidima-avibactam", "ampsulbactam", "Cefotaxima", "cefuroxima_oral", "cefuroxima_parenteral",
         "gentamicina", "ertapenem", "imipeném", "meropeném", "nitrofurantoina", "Norfloxacino (urina)",
-        "Piperacilina + Tazobactam", "Tobramicina", "merovaborbactam", "piptazo", "tmp_smx"
+        "Piperacilina + Tazobactam", "Tobramicina", "merovaborbactam", "piptazo", "tmp_smx", "colistina"
       ]
     },
     {

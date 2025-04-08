@@ -1,33 +1,31 @@
 
 
 
-import React from "react";
-import { View, Text, FlatList, StyleSheet } from "react-native";
+import React, { useState } from "react";
+import { View, Text, FlatList, StyleSheet, TouchableOpacity } from "react-native";
 import Header from "../../../components/Header";
 
-import { bacterias} from '../../../data/bacterias.json'
-import { antibioticos} from '../../../data/antibioticos.json'
+import { bacterias } from '../../../data/bacterias.json'
+import { antibioticos } from '../../../data/antibioticos.json'
 
 import { useRoute } from "@react-navigation/native";
 
-
-
 export default function Resistance({ navigation }) {
   const route = useRoute();
-  const {id} = route.params;
-  console.log(id)
+  const { id } = route.params;
 
-  const bacteria = bacterias.find((item) => item.id ===id)
+  console.log()
 
-  console.log(
-    antibioticos.filter((item) => bacteria.antibioticos.includes(item.id))
-  );
+  const [modo, setModo] = useState("MIC"); // Estado para alternar
 
+  const bacteria = bacterias.find((item) => item.id === id);
   const filteredAntibiotics = antibioticos.filter((item) =>
     bacteria.antibioticos.includes(item.id)
   );
-  
-  
+
+  const alternarModo = () => {
+    setModo((prev) => (prev === "MIC" ? "dd" : "MIC"));
+  };
 
   return (
     <View style={styles.container}>
@@ -41,6 +39,12 @@ export default function Resistance({ navigation }) {
         Pontos de cortes para determinação da sensibilidade
       </Text>
 
+      <TouchableOpacity style={styles.toggleButton} onPress={alternarModo}>
+        <Text style={styles.toggleButtonText}>
+          Alternar para {modo === "MIC" ? "Disco-Difusão" : "MIC"}
+        </Text>
+      </TouchableOpacity>
+
       <View style={styles.card}>
         <View style={styles.header}>
           <Text style={styles.headerText}>Droga</Text>
@@ -52,14 +56,17 @@ export default function Resistance({ navigation }) {
         <FlatList
           data={filteredAntibiotics}
           keyExtractor={(item) => item.id}
-          renderItem={({ item }) => (
-            <View style={styles.row}>
-              <Text style={styles.cell}>{item.nome}</Text>
-              <Text style={styles.cell}>{item.mic.R}</Text>
-              <Text style={styles.cell}>{item.mic.I}</Text>
-              <Text style={styles.cell}>{item.mic.S}</Text>
-            </View>
-          )}
+          renderItem={({ item }) => {
+            const dados = modo === "MIC" ? item.mic : item.dd;
+            return (
+              <View style={styles.row}>
+                <Text style={styles.cell}>{item.nome}</Text>
+                <Text style={styles.cell}>{dados?.R ?? "-"}</Text>
+                <Text style={styles.cell}>{dados?.I ?? "-"}</Text>
+                <Text style={styles.cell}>{dados?.S ?? "-"}</Text>
+              </View>
+            );
+          }}
         />
       </View>
     </View>
@@ -76,9 +83,20 @@ const styles = StyleSheet.create({
     fontSize: 16,
     textAlign: "center",
     marginTop: 12,
-    marginBottom: 6,
     color: "#555",
     fontStyle: "italic",
+  },
+  toggleButton: {
+    marginVertical: 10,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    backgroundColor: "#4DB6AC",
+    borderRadius: 20,
+  },
+  toggleButtonText: {
+    color: "#fff",
+    fontWeight: "bold",
+    fontSize: 14,
   },
   card: {
     flex: 1,
@@ -118,3 +136,6 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
 });
+
+
+

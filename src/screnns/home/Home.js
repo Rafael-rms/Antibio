@@ -11,7 +11,7 @@ export default function Home({ navigation }) {
 
       <ScrollView contentContainerStyle={styles.scrollContent}>
         {/* Título & subtítulo */}
-        <Text style={styles.welcome}>👋 Bem-vindo ao MicroBio App</Text>
+        <Text style={styles.welcome}>👋 Bem-vindo ao AntiBio App</Text>
         <Text style={styles.subtitle}>Explore conteúdos essenciais da microbiologia de forma simples e prática.</Text>
 
         {/* Dica do dia */}

@@ -1,155 +1,265 @@
 {
-    "antibioticos": [
-      {
-        "id": "amicacina",
-        "nome": "Amicacina",
-        "mic": { "S": "<=8", "I": "-", "R": ">16" }
-      },
-      {
-        "id": "amoxiclav",
-        "nome": "Amoxicilina + Ác. Clavulânico",
-        "mic": { "S": "<=8", "I": "-", "R": ">8" }
-      },
-      {
-        "id": "ampicilina",
-        "nome": "Ampicilina",
-        "mic": { "S": "<=8", "I": "-", "R": ">8" }
-      },
-      {
-        "id": "ampsulbactam",
-        "nome": "Ampicilina + Sulbactam",
-        "mic": { "S": "<=8", "I": "-", "R": ">8" }
-      },
-      {
-        "id": "aztreonam",
-        "nome": "Aztreonam",
-        "mic": { "S": "<=1", "I": "=2", "R": ">4" }
-      },
-      {
-        "id": "cefalexina",
-        "nome": "Cefalexina (oral)",
-        "mic": { "S": "<=16", "I": "-", "R": ">16" }
-      },
-      {
-        "id": "cefepime",
-        "nome": "Cefepime",
-        "mic": { "S": "<=1", "I": "=2", "R": ">4" }
-      },
-      {
-        "id": "cefotaxima",
-        "nome": "Cefotaxima",
-        "mic": { "S": "<=1", "I": "=2", "R": ">4" }
-      },
-      {
-        "id": "cefoxitina",
-        "nome": "Cefoxitina",
-        "mic": { "S": "<=8", "I": "-", "R": ">8" }
-      },
-      {
-        "id": "ceftazidima",
-        "nome": "Ceftazidima",
-        "mic": { "S": "<=1", "I": "=2", "R": ">4" }
-      },
-      {
-        "id": "ceftazavibactam",
-        "nome": "Ceftazidima + Avibactam",
-        "mic": { "S": "<=8", "I": "-", "R": ">8" }
-      },
-      {
-        "id": "ceftriaxona",
-        "nome": "Ceftriaxona",
-        "mic": { "S": "<=1", "I": "=2", "R": ">4" }
-      },
-      {
-        "id": "cefuroxima_oral",
-        "nome": "Cefuroxima (oral)",
-        "mic": { "S": "<=8", "I": "-", "R": ">8" }
-      },
-      {
-        "id": "cefuroxima_parenteral",
-        "nome": "Cefuroxima (parenteral)",
-        "mic": { "S": "<=1", "I": "=2", "R": ">4" }
-      },
-      {
-        "id": "ciprofloxacino",
-        "nome": "Ciprofloxacino",
-        "mic": { "S": "<=0.25", "I": "=0.5", "R": ">1" }
-      },
-      {
-        "id": "doripenem",
-        "nome": "Doripenem",
-        "mic": { "S": "<=1", "I": "=2", "R": ">4" }
-      },
-      {
-        "id": "ertapenem",
-        "nome": "Ertapenem",
-        "mic": { "S": "<=0.5", "I": "=1", "R": ">2" }
-      },
-      {
-        "id": "fosfomicina",
-        "nome": "Fosfomicina (urina)",
-        "mic": { "S": "<=32", "I": "-", "R": ">32" }
-      },
-      {
-        "id": "gentamicina",
-        "nome": "Gentamicina",
-        "mic": { "S": "<=2", "I": "-", "R": ">4" }
-      },
-      {
-        "id": "imipenem",
-        "nome": "Imipeném",
-        "mic": { "S": "<=2", "I": "=4", "R": ">8" }
-      },
-      {
-        "id": "levofloxacino",
-        "nome": "Levofloxacino",
-        "mic": { "S": "<=0.5", "I": "=1", "R": ">2" }
-      },
-      {
-        "id": "meropenem",
-        "nome": "Meropeném",
-        "mic": { "S": "<=2", "I": "=4", "R": ">8" }
-      },
-      {
-        "id": "merovaborbactam",
-        "nome": "Meropeném + Vaborbactam",
-        "mic": { "S": "<=8", "I": "-", "R": ">8" }
-      },
-      {
-        "id": "nitrofurantoina",
-        "nome": "Nitrofurantoína (urina)",
-        "mic": { "S": "<=64", "I": "-", "R": ">64" }
-      },
-      {
-        "id": "norfloxacino",
-        "nome": "Norfloxacino (urina)",
-        "mic": { "S": "<=0.5", "I": "=1", "R": ">2" }
-      },
-      {
-        "id": "piptazo",
-        "nome": "Piperacilina + Tazobactam",
-        "mic": { "S": "<=8", "I": "-", "R": ">16" }
-      },
-      {
-        "id": "temocilina",
-        "nome": "Temocilina (urina)",
-        "mic": { "S": "<=32", "I": "-", "R": ">32" }
-      },
-      {
-        "id": "tigeciclina",
-        "nome": "Tigeciclina",
-        "mic": { "S": "<=1", "I": "-", "R": ">2" }
-      },
-      {
-        "id": "tobramicina",
-        "nome": "Tobramicina",
-        "mic": { "S": "<=2", "I": "-", "R": ">4" }
-      },
-      {
-        "id": "tmp_smx",
-        "nome": "Trimetoprim + Sulfametoxazol",
-        "mic": { "S": "<=2/38", "I": "-", "R": ">4/76" }
-      }
-    ]
-  }
-  
+  "antibioticos": [
+    {
+      "id": "amoxicilina",
+      "nome": "Amoxicilina",
+      "mic": { "S": "-", "I": "-", "R": "-" },
+      "dd": { "S": "-", "I": "-", "R": "-" }
+    },
+    {
+      "id": "amoxicilina_clavulanico_parenteral",
+      "nome": "Amoxicilina/Ácido Clavulânico (Parenteral)",
+      "mic": { "S": "<=8", "I": "-", "R": ">8" },
+      "dd": { "S": ">=19", "I": "-", "R": "<19" }
+    },
+    {
+      "id": "amoxicilina_clavulanico_oral",
+      "nome": "Amoxicilina/Ácido Clavulânico (Oral)",
+      "mic": { "S": "<=8", "I": "-", "R": ">8" },
+      "dd": { "S": ">=19", "I": "-", "R": "<19" }
+    },
+    {
+      "id": "amoxicilina_clavulanico_itu",
+      "nome": "Amoxicilina/Ácido Clavulânico (Oral) - ITU",
+      "mic": { "S": "<=8", "I": "0,002-8", "R": ">8" },
+      "dd": { "S": ">=50", "I": "19-49", "R": "<19" }
+    },
+    {
+      "id": "amoxicilina_clavulanico_outras",
+      "nome": "Amoxicilina/Ácido Clavulânico (Oral) - Outras Indicações",
+      "mic": { "S": "<=8", "I": "-", "R": ">8" },
+      "dd": { "S": ">=19", "I": "19-20", "R": "<19" }
+    },
+    {
+      "id": "ampicilina",
+      "nome": "Ampicilina",
+      "mic": { "S": "<=8", "I": "-", "R": ">8" },
+      "dd": { "S": ">=14", "I": "-", "R": "<14" }
+    },
+    {
+      "id": "ampicilina_sulbactam",
+      "nome": "Ampicilina/Sulbactam",
+      "mic": { "S": "<=8", "I": "-", "R": ">8" },
+      "dd": { "S": ">=14", "I": "-", "R": "<14" }
+    },
+    {
+      "id": "piptazo",
+      "nome": "Piperacilina + Tazobactam",
+      "mic": { "S": "<=8", "I": "-", "R": ">8" },
+      "dd": { "S": ">=20", "I": "19", "R": "<20" }
+    },
+
+
+    {
+      "id": "cefadroxila",
+      "nome": "Cefadroxila",
+      "mic": { "S": "<=16", "I": "-", "R": ">16" },
+      "dd": { "S": ">=12", "I": "-", "R": "<12" }
+    },
+    {
+      "id": "cefalexina",
+      "nome": "Cefalexina",
+      "mic": { "S": "<=16", "I": "-", "R": ">16" },
+      "dd": { "S": ">=14", "I": "-", "R": "<14" }
+    },
+    {
+      "id": "cefazolina",
+      "nome": "Cefazolina",
+      "mic": { "S": "<=4", "I": "0,002-4", "R": ">4" },
+      "dd": { "S": ">=50", "I": "20-49", "R": "<20" }
+    },
+    {
+      "id": "cefepime",
+      "nome": "Cefepime",
+      "mic": { "S": "<=4", "I": "2-4", "R": ">4" },
+      "dd": { "S": ">=27", "I": "24-26", "R": "<24" }
+    },
+    {
+      "id": "cefotaxima",
+      "nome": "Cefotaxima (Infecções não meníngeas)",
+      "mic": { "S": "<=2", "I": "2", "R": ">2" },
+      "dd": { "S": ">=20", "I": "17-19", "R": "<17" }
+    },
+    {
+      "id": "cefotaxima_meningite",
+      "nome": "Cefotaxima (Meningite)",
+      "mic": { "S": "<=1", "I": "-", "R": ">1" },
+      "dd": { "S": ">=20", "I": "-", "R": "<20" }
+    },
+    {
+      "id": "cefoxitina",
+      "nome": "Cefoxitina (Triagem)",
+      "mic": { "S": "-", "I": "-", "R": "-" },
+      "dd": { "S": ">=19", "I": "-", "R": "<19" }
+    },
+    {
+      "id": "ceftazidima",
+      "nome": "Ceftazidima",
+      "mic": { "S": "<=4", "I": "2-4", "R": ">4" },
+      "dd": { "S": ">=22", "I": "19-21", "R": "<19" }
+    },
+    {
+      "id": "ceftriaxona",
+      "nome": "Ceftriaxona (Infecções não meníngeas)",
+      "mic": { "S": "<=2", "I": "2", "R": ">2" },
+      "dd": { "S": ">=25", "I": "22-24", "R": "<22" }
+    },
+    {
+      "id": "ceftriaxona_meningite",
+      "nome": "Ceftriaxona (Meningite)",
+      "mic": { "S": "<=1", "I": "-", "R": ">1" },
+      "dd": { "S": ">=25", "I": "-", "R": "<25" }
+    },
+    {
+      "id": "cefuroxima_oral",
+      "nome": "Cefuroxima (Oral)",
+      "mic": { "S": "<=8", "I": "-", "R": ">8" },
+      "dd": { "S": ">=19", "I": "-", "R": "<19" }
+    },
+    {
+      "id": "cefuroxima_parenteral",
+      "nome": "Cefuroxima (Parenteral)",
+      "mic": { "S": "<=8", "I": "0,002-8", "R": ">8" },
+      "dd": { "S": ">=50", "I": "19-49", "R": "<19" }
+    },
+
+    {
+      "id": "doripenem",
+      "nome": "Doripenem",
+      "mic": { "S": "<=1", "I": "0,002-1", "R": ">1" },
+      "dd": { "S": ">=23", "I": "20-22", "R": "<20" }
+    },
+    {
+      "id": "ertapenem",
+      "nome": "Ertapenem",
+      "mic": { "S": "<=0,5", "I": "0,002-0,5", "R": ">0,5" },
+      "dd": { "S": ">=22", "I": "19-21", "R": "<19" }
+    },
+    {
+      "id": "imipenem",
+      "nome": "Imipenem",
+      "mic": { "S": "<=2", "I": "0,002-2", "R": ">2" },
+      "dd": { "S": ">=23", "I": "20-22", "R": "<20" }
+    },
+    {
+      "id": "meropenem",
+      "nome": "Meropenem",
+      "mic": { "S": "<=2", "I": "0,002-2", "R": ">2" },
+      "dd": { "S": ">=25", "I": "22-24", "R": "<22" }
+    },
+
+
+    {
+      "id": "amicacina",
+      "nome": "Amicacina",
+      "mic": { "S": "<=8", "I": "-", "R": ">8" },
+      "dd": { "S": ">=18", "I": "-", "R": "<18" }
+    },
+    {
+      "id": "gentamicina",
+      "nome": "Gentamicina",
+      "mic": { "S": "<=2", "I": "-", "R": ">2" },
+      "dd": { "S": ">=17", "I": "-", "R": "<17" }
+    },
+    {
+      "id": "tobramicina",
+      "nome": "Tobramicina",
+      "mic": { "S": "<=2", "I": "-", "R": ">2" },
+      "dd": { "S": ">=16", "I": "-", "R": "<16" }
+    },
+    
+
+    {
+      "id": "tigeciclina",
+      "nome": "Tigeciclina",
+      "mic": { "S": "<=0.5", "I": "-", "R": ">0.5" },
+      "dd": { "S": ">=18", "I": "-", "R": "<18" }
+    },
+
+
+
+
+    {
+      "id": "colistina",
+      "nome": "Colistina",
+      "mic": { "S": "<=2", "I": "-", "R": ">2" },
+      "dd": { "S": "-", "I": "-", "R": "-" }
+    },
+    {
+      "id": "polimixina_b",
+      "nome": "Polimixina B",
+      "mic": { "S": "<=2", "I": "-", "R": ">2" },
+      "dd": { "S": "-", "I": "-", "R": "-" }
+    },
+
+
+    {
+      "id": "ciprofloxacina",
+      "nome": "Ciprofloxacina (Infecções não meníngeas)",
+      "mic": { "S": "<=0.25", "I": "0.5", "R": ">0.5" },
+      "dd": { "S": ">=25", "I": "22-24", "R": "<22" }
+    },
+    {
+      "id": "ciprofloxacina_salmonella",
+      "nome": "Ciprofloxacina (Salmonella spp)",
+      "mic": { "S": "<=0.06", "I": "-", "R": ">0.06" },
+      "dd": { "S": "-", "I": "-", "R": "-" }
+    },
+    {
+      "id": "levofloxacina",
+      "nome": "Levofloxacina",
+      "mic": { "S": "<=0.5", "I": "1", "R": ">1" },
+      "dd": { "S": ">=23", "I": "19-22", "R": "<19" }
+    },
+    {
+      "id": "norfloxacina",
+      "nome": "Norfloxacina",
+      "mic": { "S": "<=0.5", "I": "-", "R": ">0.5" },
+      "dd": { "S": ">=24", "I": "-", "R": "<24" }
+    },
+    {
+      "id": "ofloxacina",
+      "nome": "Ofloxacina",
+      "mic": { "S": "<=0.25", "I": "0.5", "R": ">0.5" },
+      "dd": { "S": ">=24", "I": "22-23", "R": "<22" }
+    },
+    {
+      "id": "moxifloxacina",
+      "nome": "Moxifloxacina",
+      "mic": { "S": "<=0.25", "I": "-", "R": ">0.25" },
+      "dd": { "S": ">=22", "I": "-", "R": "<22" }
+    },
+
+    
+
+    {
+      "id": "sulfametoxazol_trimetoprim",
+      "nome": "Sulfametoxazol/Trimetoprim",
+      "mic": { "S": "<=2", "I": "4", "R": ">4" },
+      "dd": { "S": ">=14", "I": "11-13", "R": "<11" }
+    },
+
+
+    {
+      "id": "fosfomicina_oral",
+      "nome": "Fosfomicina (Oral) – E. coli",
+      "mic": { "S": "<=8", "I": "-", "R": ">8" },
+      "dd": { "S": ">=24", "I": "-", "R": "<24" }
+    },
+    {
+      "id": "fosfomicina_parenteral",
+      "nome": "Fosfomicina (Parenteral)",
+      "mic": { "S": "<=8", "I": "-", "R": ">8" },
+      "dd": { "S": ">=24", "I": "-", "R": "<24" }
+    },
+
+    {
+      "id": "nitrofurantoina",
+      "nome": "Nitrofurantoína – E. coli",
+      "mic": { "S": "<=64", "I": "-", "R": ">64" },
+      "dd": { "S": ">=11", "I": "-", "R": "<11" }
+    }
+    
+
+  ]
+}
