@@ -1,10 +1,10 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Login from "../screnns/login/Login";
+import Login from "../screens/login/Login";
 import TabRoutes from "./tab.routes";
-import BacterialInformation from "../screnns/bacterialInformation/BacterialInformation";
-import Features from "../screnns/bacterialInformation/features/Features";
-import Laboratory from "../screnns/bacterialInformation/laboratory/Laboratory";
-import Resistance from "../screnns/bacterialInformation/resistance/Resistance";
+import BacterialInformation from "../screens/bacterialInformation/BacterialInformation";
+import Features from "../screens/bacterialInformation/features/Features";
+import Laboratory from "../screens/bacterialInformation/laboratory/Laboratory";
+import Resistance from "../screens/bacterialInformation/resistance/Resistance";
 
 const Stack = createNativeStackNavigator();
 

@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
   },
   containerLogo: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: '#FFFFFF',
     width: '100%',
     borderBottomRightRadius: 120,
     alignItems: 'center',
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
   inputWrapper: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: 'white',
+    backgroundColor: '#FFFFFF',
     width: '90%',
     height: 55,
     borderRadius: 15,

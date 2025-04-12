@@ -2,9 +2,9 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 
-import Home from '../screnns/home/Home';
-import Search from '../screnns/search/Search';
-import Quiz from '../screnns/quiz/Quiz';
+import Home from '../screens/home/Home';
+import Search from '../screens/search/Search';
+import Quiz from '../screens/quiz/Quiz';
 
 const Tab = createBottomTabNavigator();
 
