@@ -52,7 +52,9 @@ export default function Login({ navigation }) {
           <Text style={styles.textButtonCadastrar}>
             Ainda não tem uma conta?
           </Text>
-          <TouchableOpacity style={styles.buttonCadastrar}>
+          <TouchableOpacity 
+            onPress={() => navigation.navigate("Register")}
+            style={styles.buttonCadastrar}>
             <Text style={styles.textCadastrar}> Cadastre-se</Text>
           </TouchableOpacity>
         </View>

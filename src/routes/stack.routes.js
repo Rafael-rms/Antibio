@@ -5,6 +5,7 @@ import BacterialInformation from "../screens/bacterialInformation/BacterialInfor
 import Features from "../screens/bacterialInformation/features/Features";
 import Laboratory from "../screens/bacterialInformation/laboratory/Laboratory";
 import Resistance from "../screens/bacterialInformation/resistance/Resistance";
+import Register from "../screens/register/Register";
 
 const Stack = createNativeStackNavigator();
 
@@ -41,6 +42,10 @@ export default function StackRoutes() {
             <Stack.Screen 
                 name="Resistance"
                 component={Resistance}
+            />
+            <Stack.Screen
+                name="Register"
+                component={Register}
             />
         </Stack.Navigator>
     )
